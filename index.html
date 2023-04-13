@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fixed Header and Footer with Centered Content</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      
+      /* header styles */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+      /* content styles */
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      
+      /* footer styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Fixed Header</h1>
+    </header>
+    <div class="content">
+      <h1>Centered Content</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus lacus nunc, at vestibulum est fermentum id. Nulla facilisi. Duis interdum elementum libero, vel tincidunt enim.</p>
+    </div>
+    <footer>
+      <p>Fixed Footer</p>
+    </footer>
+  </body>
+</html>
